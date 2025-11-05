@@ -1,0 +1,14 @@
+import React from "react";
+
+const Navbar = () => {
+
+    return (
+        <div>
+            <h2>hola soy el navbar </h2>
+
+        </div>
+    )
+
+}
+
+export default Navbar;

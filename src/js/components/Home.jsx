@@ -1,26 +1,47 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import { Card } from "./Card.jsx"   //paso tres exportar el componente 
+import Navbar from "./Navbar.jsx"
+
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-            
+const Home = (props) => {
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+	let receta = [
+		{
+			nombre: "tarta de manzana", info: "una deliciosa tarta de manzana"
+		},
+		{
+			nombre: "pasta", info: "una deliciosa pasta italiana"
+		},
+		{
+			nombre: "sopa", info: "una deliciosa sopa de tomate"
+		},
+		{
+			nombre: "arroz", info: "un delicioso arroz"
+		}
+	]
+
+
+
+	return (
+		<div className="">
+			<Navbar/>
+
+
+			{/* llamar al componente */}
+
+			<div className="row container">
+				{receta.map((item, index) => (
+					<div className="col-lg-3 col-md-6 col-12">
+						<Card key={index} nombre={item.nombre} info={item.info} />
+					</div>
+				))}
+
+			</div>
+
+
+
 		</div>
 	);
 };
