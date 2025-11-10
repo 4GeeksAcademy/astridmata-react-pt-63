@@ -2,6 +2,7 @@ import React from "react";
 
 import { Card } from "./Card.jsx"   //paso tres exportar el componente 
 import Navbar from "./Navbar.jsx"
+import { Hooks } from "./Hooks.jsx";
 
 
 //create your first component
@@ -45,6 +46,9 @@ const Home = (props) => {
 
 			<p>{props.digitTwo}</p>
 			<p>{props.digitOne}</p>
+
+
+			<Hooks />
 
 
 		</div>
