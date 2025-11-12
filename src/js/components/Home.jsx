@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "./Card.jsx"   //paso tres exportar el componente 
 import Navbar from "./Navbar.jsx"
 import { Hooks } from "./Hooks.jsx";
+import { Form } from "./Form.jsx";
 
 
 //create your first component
@@ -50,7 +51,7 @@ const Home = (props) => {
 
 			<Hooks />
 
-
+			<Form/>
 		</div>
 	);
 };
