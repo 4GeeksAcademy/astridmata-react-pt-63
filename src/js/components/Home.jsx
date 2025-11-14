@@ -4,7 +4,7 @@ import { Card } from "./Card.jsx"   //paso tres exportar el componente
 import Navbar from "./Navbar.jsx"
 import { Hooks } from "./Hooks.jsx";
 import { Form } from "./Form.jsx";
-
+import { Frutas } from "./Frutas.jsx";
 
 //create your first component
 // const Home = ({seconds}) => {
@@ -31,6 +31,8 @@ const Home = (props) => {
 			<Navbar />
 
 
+
+
 			{/* llamar al componente */}
 
 			{/* <div className="row container">
@@ -52,6 +54,9 @@ const Home = (props) => {
 			<Hooks />
 
 			<Form/>
+
+
+			<Frutas/>
 		</div>
 	);
 };
