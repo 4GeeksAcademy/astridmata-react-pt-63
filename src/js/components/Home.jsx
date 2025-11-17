@@ -5,6 +5,7 @@ import Navbar from "./Navbar.jsx"
 import { Hooks } from "./Hooks.jsx";
 import { Form } from "./Form.jsx";
 import { Frutas } from "./Frutas.jsx";
+import Api  from "./Api.jsx";
 
 //create your first component
 // const Home = ({seconds}) => {
@@ -57,6 +58,7 @@ const Home = (props) => {
 
 
 			<Frutas/>
+			<Api/>
 		</div>
 	);
 };
